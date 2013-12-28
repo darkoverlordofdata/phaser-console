@@ -21,11 +21,11 @@ url: http://localhost/
 port: 0xd16a
 
 source: ./source
-destination: ./gh-pages/phaser-console
+destination: ./test/phaser-console
 
 serve:
-  - ./gh-pages
-  - ../../darkoverlordofdata.github.io/master
+  - ./test
+  - ../darkoverlordofdata.github.io/master
 
 
 plugins:
