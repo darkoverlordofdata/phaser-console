@@ -2,17 +2,36 @@
 <html lang="en"> 
 <head> 
 	<meta charset="UTF-8" />
-	<title>Phaser</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+    <title>Phaser</title>
     <style type="text/css">
-        body {
+        body
+        {
+            padding: 0;
             margin: 0;
+            background: #000000;
+            color: white;
+            font: 1em/2em Arial, Helvetica;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        * {
+            user-select: none;
+            -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
         }
     </style>
 </head>
 <body>
-<script type="text/javascript" src="js/phaser.min.js"></script>
-<script type="text/javascript" src="js/game.js"></script>
-<!--<script type="text/coffeescript" src="src/game.coffee"></script>-->
-<!--<script type="text/javascript" src="js/coffee-script.js"></script>-->
+<script src="//cdn.darkoverlordofdata.com/js/phaser-1.1.3.min.js"></script>
+<script src="assets/game.js"></script>
 </body>
 </html>
