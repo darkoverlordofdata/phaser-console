@@ -3,7 +3,6 @@
 ## Create a console with Phaser
 
 
-
 ## MIT License
 
 Copyright (c) 2013 Bruce Davidson &lt;darkoverlordofdata@gmail.com&gt;

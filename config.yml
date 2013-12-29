@@ -2,8 +2,8 @@ name: "phaser-console"
 description: "On, Hekyll! On, Jekyll! On Huginn and Muninn!"
 url: http://darkoverlordofdata.com/phaser-console
 
-source: ./source
-destination: ./gh-pages
+source: ./template
+destination: ../gh-pages
 
 plugins:
   - huginn-asset-bundler

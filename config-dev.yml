@@ -20,12 +20,12 @@ description: "On, Hekyll! On, Jekyll! On Huginn and Muninn!"
 url: http://localhost/
 port: 0xd16a
 
-source: ./source
-destination: ./test/phaser-console
+source: ./template
+destination: ./gh-pages/phaser-console
 
 serve:
-  - ./test
-  - ../darkoverlordofdata.github.io/master
+  - ./gh-pages
+  - ../../darkoverlordofdata.github.io/master
 
 
 plugins:

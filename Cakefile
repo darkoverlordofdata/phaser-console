@@ -22,19 +22,22 @@ util = require 'util'
 # Build Source
 #
 #
-task 'build:src', 'Build the coffee source', ->
+task 'build:src', 'Build the source folder', ->
 
   #
-  # Build the AST lib
+  # Build the intermediate code
   #
-  exec 'coffee -o source/_assets -c src', ($err, $stdout, $stderr) ->
+  exec 'coffee -o js -c src', ($err, $stdout, $stderr) ->
 
     util.log $err if $err if $err?
     util.log $stderr if $stderr if $stderr?
     util.log $stdout if $stdout if $stdout?
     util.log 'ok' unless $stdout?
 
-    exec 'browserify --debug source/_assets/app.js | uglifyjs > source/_assets/app.js', ($err, $stdout, $stderr) ->
+    #
+    # package up the intermediate code
+    #
+    exec 'browserify --debug js/game.js | uglifyjs > template/assets/game.js', ($err, $stdout, $stderr) ->
 
       util.log $err if $err if $err?
       util.log $stderr if $stderr if $stderr?
