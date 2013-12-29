@@ -25,6 +25,7 @@ module.exports = class Boot extends Phaser.State
   #
   preload: ->
     @load.image 'background', 'assets/background.jpg'
+#    @load.image 'preloadBar', 'assets/loader.png'
 
   #
   # Initialize the application
